@@ -5,8 +5,10 @@ $(document).ready(function() {
  });
  $('#rest_pasw_btn').click(function(e) {
  	e.preventDefault();
- 	$('.container-inputs__disable-block').fadeToggle(1000, "linear");
- 	$('#login_btn').toggle();
+ 	$('.container-inputs__disable-block').fadeToggle(1000, "linear", function(){
+ 		$('#login_btn').toggle();
+ 	});
+
  });
 
 
